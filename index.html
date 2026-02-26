@@ -3,9 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Web-based photobooth application to capture and download photos directly from your browser.">
+    <title>PhotoBooth</title>
+    <link rel="icon" href="favicon.png">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    
+    <header>
+        <!-- right -->
+        <div class="logo">
+            <h1>PhotoBooth</h1>
+        </div>
+
+        <!-- left -->
+        <div class="hamburger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- camera box -->
+        <div class="camera-box">
+            <video id="video" autoplay playsinline></video>
+        </div>
+
+        <!-- button camera -->
+         <button id="button-camera" type="button">
+            Capture
+         </button>
+
+         <!-- result -->
+          <div class="result">
+            <canvas id="canvas"></canvas>
+          </div>
+
+          <a id="download" download="PhotoBooth.png" style="display: none;">Download</a>
+    </main>
+        
+    <script src="script.js"></script>
 </body>
 </html>
