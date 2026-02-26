@@ -38,6 +38,12 @@ main{
     width: 100%;
 }
 
+.title {
+    font-family: "", sans-serif;
+    font-size: 28px;
+    color: rgb(179, 14, 14);
+}
+
 .logo {
     font-family: "fearless", sans-serif;
     font-size: 35px;
