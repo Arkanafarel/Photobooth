@@ -1,6 +1,16 @@
 @font-face {
-    font-family: "fearless";
+    font-family:"Garcian";
+    src: url("font/Garcian.otf") format("truetype");
+}
+
+@font-face {
+    font-family:"fearless";
     src: url("font/fearless.otf") format("truetype");
+}
+
+@font-face {
+    font-family:"Vogun-Medium";
+    src: url("font/Vogun-Medium.ttf") format("truetype");
 }
 
 * {
@@ -38,17 +48,25 @@ main{
     width: 100%;
 }
 
-.title {
-    font-family: "", sans-serif;
-    font-size: 28px;
-    color: rgb(179, 14, 14);
-}
-
 .logo {
-    font-family: "fearless", sans-serif;
+    font-family: "Garcian", sans-serif;
     font-size: 35px;
     font-weight: bold;
     color: rgb(179, 14, 14);
+}
+
+.title {
+    font-family: "Vogun-Medium", sans-serif;
+    font-size: 28px;
+    color: rgb(255, 85, 85);
+}
+
+.description {
+    font-family: "poppins", sans-serif;
+    font-size: 18px;
+    color: rgb(109, 6, 6);
+    text-align: center;
+    max-width: 800px;
 }
 
 .camera-box {
@@ -76,7 +94,7 @@ main{
 
 #button-camera {
     padding: 10px 20px;
-    background: #007BFF;
+    background-color: rgb(255, 85, 85);
     color: white;
     border: none;
     border-radius: 5px;
@@ -84,7 +102,7 @@ main{
 }
 
 #button-camera:hover {
-    background: #0056b3;
+    box-shadow: rgb(25, 17, 17);
 }
 
 .result {
